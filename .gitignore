@@ -1,0 +1,14 @@
+# System
+.DS_Store
+
+# Python (for your other projects)
+__pycache__/
+*.pyc
+db.sqlite3
+.env
+
+# Node (future)
+node_modules/
+
+# VS Code
+.vscode/

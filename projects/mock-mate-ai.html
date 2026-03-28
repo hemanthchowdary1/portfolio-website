@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MockMate AI | Hemanth Kumar</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../favicon.png?v=1">
+</head>
+<body>
+
+    <div class="ambient-glow"></div>
+    <div class="cursor-dot" id="cursor-dot"></div>
+    <div class="cursor-outline" id="cursor-outline"></div>
+
+    <nav>
+        <div class="nav-left">
+            <a href="../index.html" class="logo">Hemanth<span>.</span></a>
+            <div class="live-time" id="live-time">IST 00:00:00</div>
+        </div>
+        
+        <div class="nav-right">
+            <div class="nav-links">
+                <a href="../index.html#about">About</a>
+                <a href="../index.html#experience">Experience</a>
+                <a href="../projects.html" style="color: var(--neon);">Work</a>
+                <a href="../index.html#contact">Contact</a>
+            </div>
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Theme">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" id="theme-icon">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <header class="project-header">
+        <a href="../projects.html" class="back-btn">
+            <span class="arrow">&larr;</span> Back to Archive
+        </a>
+
+        <h1 class="project-title">Mock Mate AI</h1>
+        
+        <div class="project-meta">
+            <div class="meta-item">
+                <h4>Role</h4>
+                <p>Frontend Engineer</p>
+            </div>
+            <div class="meta-item">
+                <h4>Category</h4>
+                <p>AI-Powered EdTech Tool</p>
+            </div>
+            <div class="meta-item">
+                <h4>Tech Stack</h4>
+                <div class="meta-tags">
+                    <span>React (Vite)</span>
+                    <span>Tailwind</span>
+                    <span>LLM API</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-hero-img">
+            <img src="../images/mockmate.png" alt="AI Interview Application" style="width: 100%; height: 100%; object-fit: cover; border-radius: 20px;">
+        </div>
+    </header>
+
+    <main class="project-content">
+        <h2>Overview</h2>
+        <p>MockMate AI is an AI-powered interview simulation platform designed to replicate real-world technical interviews with dynamic question generation and automated evaluation. Built with React and Vite, the app generates dynamic, role-specific questions and uses AI to evaluate responses against structured rubrics and provide real-time feedback.</p>
+        
+        <h2>The State Management Challenge</h2>
+        <p>Ensuring the AI-generated evaluations were highly consistent, objective, and mapped perfectly to the React UI state during asynchronous evaluation loops proved incredibly difficult, as LLMs frequently hallucinate or break JSON formatting.</p>
+        
+        <h2>The Engineering Solution</h2>
+        <p>I designed a structured prompt engineering pipeline with enforced JSON outputs to ensure reliable AI evaluations. On the frontend, I built a robust state management system using React Context to handle asynchronous evaluation flows, ensuring consistent UI updates even with delayed or malformed API responses.</p>
+
+        <div class="project-links">
+            <a href="https://github.com/hemanthchowdary1/mockmate-ai" class="btn-primary" target="_blank" rel="noopener noreferrer">View Source Code &#x2197;&#xFE0E;</a>
+            <!-- <a href="#" class="btn-secondary" target="_blank" rel="noopener noreferrer">View Live Site</a> -->
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-left">
+            &copy; 2026 Hemanth Kumar.
+        </div>
+        <div class="social-links">
+            <a href="https://github.com/hemanthchowdary1" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/hemanthkumar01/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://x.com/im_hemanth_" target="_blank" rel="noopener noreferrer">Twitter</a>
+            <a href="https://www.instagram.com/_hemanthchowdary_/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+
+</body>
+</html>

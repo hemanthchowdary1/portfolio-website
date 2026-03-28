@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PostCraft | Hemanth Kumar</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../favicon.png?v=1">
+</head>
+<body>
+
+    <div class="ambient-glow"></div>
+    <div class="cursor-dot" id="cursor-dot"></div>
+    <div class="cursor-outline" id="cursor-outline"></div>
+
+    <nav>
+        <div class="nav-left">
+            <a href="../index.html" class="logo">Hemanth<span>.</span></a>
+            <div class="live-time" id="live-time">IST 00:00:00</div>
+        </div>
+        
+        <div class="nav-right">
+            <div class="nav-links">
+                <a href="../index.html#about">About</a>
+                <a href="../index.html#experience">Experience</a>
+                <a href="../projects.html" style="color: var(--neon);">Work</a>
+                <a href="../index.html#contact">Contact</a>
+            </div>
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Theme">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" id="theme-icon">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <header class="project-header">
+        <a href="../projects.html" class="back-btn">
+            <span class="arrow">&larr;</span> Back to Archive
+        </a>
+
+        <h1 class="project-title">Post Craft</h1>
+        
+        <div class="project-meta">
+            <div class="meta-item">
+                <h4>Role</h4>
+                <p>Full Stack Developer</p>
+            </div>
+            <div class="meta-item">
+                <h4>Category</h4>
+                <p>Social / CMS Platform</p>
+            </div>
+            <div class="meta-item">
+                <h4>Tech Stack</h4>
+                <div class="meta-tags">
+                    <span>Python</span>
+                    <span>Django</span>
+                    <span>AJAX</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-hero-img">
+            <img src="../images/postcraft.png" alt="PostCraft Blogging Platform" style="width: 100%; height: 100%; object-fit: cover; border-radius: 20px;">
+        </div>
+    </header>
+
+    <main class="project-content">
+        <h2>Overview</h2>
+        <p>PostCraft is a full-featured, secure blogging and social platform. It handles complex relational data, featuring robust user authentication, email OTP verification, an advanced notification system, and deep social interactions like following, liking, and bookmarking.</p>
+        
+        <h2>The UX Challenge</h2>
+        <p>Traditional server-rendered Django applications often suffer from clunky page reloads during micro-interactions (like clicking a "heart" or "bookmark" button), which severely degrades the modern user experience.</p>
+        
+        <h2>The Engineering Solution</h2>
+        <p>To create a Single Page Application (SPA) feel without the overhead of React, I developed a custom Vanilla JavaScript modular system utilizing the asynchronous <code>fetch</code> API. I implemented optimistic UI updates—meaning the UI instantly reflects likes and bookmarks to the user, while asynchronously syncing with the Django REST endpoints in the background. This resulted in a frictionless, highly responsive platform.</p>
+
+        <div class="project-links">
+            <a href="https://github.com/hemanthchowdary1/postcraft-bloggingPlatform" class="btn-primary" target="_blank" rel="noopener noreferrer">View Source Code &#x2197;&#xFE0E;</a>
+            <!-- <a href="#" class="btn-secondary" target="_blank" rel="noopener noreferrer">View Live Site</a> -->
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-left">
+            &copy; 2026 Hemanth Kumar.
+        </div>
+        <div class="social-links">
+            <a href="https://github.com/hemanthchowdary1" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/hemanthkumar01/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://x.com/im_hemanth_" target="_blank" rel="noopener noreferrer">Twitter</a>
+            <a href="https://www.instagram.com/_hemanthchowdary_/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+
+</body>
+</html>

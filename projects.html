@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archive | Hemanth Kumar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="favicon.png?v=2">
+</head>
+<body>
+
+    <div class="ambient-glow"></div>
+    <div class="cursor-dot" id="cursor-dot"></div>
+    <div class="cursor-outline" id="cursor-outline"></div>
+
+    <nav>
+        <div class="nav-left">
+            <a href="index.html" class="logo">Hemanth<span>.</span></a>
+            <div class="live-time" id="live-time">IST 00:00:00</div>
+        </div>
+        
+        <div class="nav-right">
+            <div class="nav-links">
+                <a href="index.html#about">About</a>
+                <a href="index.html#experience">Experience</a>
+                <a href="projects.html" style="color: var(--neon);">Work</a>
+                <a href="index.html#contact">Contact</a>
+            </div>
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Theme">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" id="theme-icon">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <header class="archive-header">
+        <a href="index.html" class="back-btn">
+            <span class="arrow">&larr;</span> Back to Home
+        </a>
+
+        <h1>Project Archive</h1>
+        <p>A complete collection of things I've built, designed, and experimented with.</p>
+    </header>
+
+    <section class="archive-grid-section">
+        <div class="grid">
+            <a href="projects/echo-room.html" class="project-link tilt-card">
+                <div class="card">
+                    <h3>Echo Room</h3>
+                    <p>A modern real-time chat application built using Django Channels and WebSockets, enabling instant messaging, live user status, and media sharing.</p>
+                    <div class="tech-stack">
+                        <span>Django Channels</span>
+                        <span>WebSockets</span>
+                        <span>Redis</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="projects/penny-track.html" class="project-link tilt-card">
+                <div class="card">
+                    <h3>Penny Track</h3>
+                    <p>A smart expense tracker built with React and Django REST Framework featuring AI-powered spending insights and dynamic financial charts.</p>
+                    <div class="tech-stack">
+                        <span>React.js</span>
+                        <span>Django REST</span>
+                        <span>Generative AI</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="projects/post-craft.html" class="project-link tilt-card">
+                <div class="card">
+                    <h3>Post Craft</h3>
+                    <p>A full-featured blogging platform with a modern UI, email OTP verification, social features, and a comprehensive bookmarking system.</p>
+                    <div class="tech-stack">
+                        <span>Python</span>
+                        <span>Django</span>
+                        <span>JS/AJAX</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="projects/mock-mate-ai.html" class="project-link tilt-card">
+                <div class="card">
+                    <h3>Mock Mate AI</h3>
+                    <p>AI-powered interview preparation app that simulates real scenarios, evaluates answers, and provides structured performance feedback.</p>
+                    <div class="tech-stack">
+                        <span>React (Vite)</span>
+                        <span>Tailwind</span>
+                        <span>LLM API</span>
+                    </div>
+                </div>
+            </a>
+
+             <a href="projects/smart-cart.html" class="project-link tilt-card">
+                <div class="card">
+                    <h3>Smart Cart</h3>
+                    <p>A full-stack Django ecommerce web application featuring product browsing, dynamic filtering, wishlist, cart system, and order management.</p>
+                    <div class="tech-stack">
+                        <span>Django</span>
+                        <span>TailwindCSS</span>
+                        <span>SQLite</span>
+                    </div>
+                </div>
+            </a>
+
+             <a href="projects/portfolio.html" class="project-link tilt-card">
+                <div class="card">
+                    <h3>Portfolio</h3>
+                    <p>The highly interactive personal portfolio website you are viewing right now, built with complex CSS 3D tilt animations and fluid grid layouts.</p>
+                    <div class="tech-stack">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-left">
+            &copy; 2026 Hemanth Kumar.
+        </div>
+        <div class="social-links">
+            <a href="https://github.com/hemanthchowdary1" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/hemanthkumar01/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://x.com/im_hemanth_" target="_blank" rel="noopener noreferrer">Twitter</a>
+            <a href="https://www.instagram.com/_hemanthchowdary_/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
