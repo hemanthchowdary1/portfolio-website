@@ -110,7 +110,7 @@ section { padding: 6rem 10%; position: relative; z-index: 10; scroll-margin-top:
 /* ARCHIVE & PROJECT DETAILS */
 
 .archive-header, .project-header { padding: 10rem 10% 4rem; text-align: left; position: relative; z-index: 10; }
-.archive-grid-section { padding: 2rem 10% 8rem; position: relative; z-index: 10; }
+.archive-grid-section { padding: 2rem 10% 1rem; position: relative; z-index: 10; }
 
 .back-btn { display: inline-flex; align-items: center; gap: 8px; color: var(--text-muted); text-decoration: none; font-size: 1.15rem; font-weight: 500; transition: color 0.3s ease; margin-bottom: 2.5rem; }
 .back-btn .arrow { transition: transform 0.3s ease; font-size: 1.3rem; line-height: 1; }
@@ -207,30 +207,23 @@ html, body {
     }
 
     /* PROJECT DETAIL PAGE MOBILE */
-    /* Shrink the massive project title to fit on phone screens */
-    /* Shrink the massive project title to fit on phone screens without breaking letters */
     .project-header h1 {
-        /* Dropped the minimum size to 1.8rem and the scaling to 8vw */
         font-size: clamp(1.8rem, 8vw, 3rem);
         letter-spacing: -1px;
         line-height: 1.1;
-        /* Removed the word-wrap rule so it stays on one line */
     }
 
-    /* Stack the meta info (Role, Category, Tech Stack) nicely */
     .project-meta {
         grid-template-columns: 1fr; 
         gap: 1.5rem;
     }
 
-    /* Ensure the project body text has enough breathing room */
     .project-body {
         font-size: 1rem;
         line-height: 1.6;
     }
 
     /* PROJECT BODY MOBILE */
-    /* Remove the huge empty black space around the hero image on mobile */
     .project-hero-img {
         min-height: 0; /* Overrides the desktop minimum height */
         margin-bottom: 2.5rem;
@@ -255,6 +248,26 @@ html, body {
         font-size: 1rem;
         line-height: 1.6;
         margin-bottom: 1.5rem;
+    }
+
+    /* ARCHIVE & PLAYGROUND MOBILE FIXES */
+    /* Ensure the header container has matching mobile padding */
+    .archive-header {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    /* Shrink the massive Playground/Archive titles to fit narrow screens */
+    .archive-header h1 {
+        font-size: clamp(2rem, 10vw, 4rem);
+        letter-spacing: -1px;
+        line-height: 1.1;
+    }
+
+    /* Ensure the grid section aligns perfectly with the header on mobile */
+    .archive-grid-section {
+        padding-left: 6%;
+        padding-right: 6%;
     }
 }
 
