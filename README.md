@@ -20,7 +20,8 @@ All animations are handled using CSS transforms and lightweight JavaScript for o
 
 ## 📂 Structure
 - `index.html` - Main landing page  
-- `projects.html` - Project archive page  
+- `projects.html` - Project archive page
+- `playground.html` - Creative work & experiments
 - `/projects` - Individual project pages  
 - `/images` - Assets & previews  
 - `script.js` - Animations & interactions  
